@@ -1,0 +1,70 @@
+body {
+  background-color: #1c2120;
+}
+
+nav li {
+  font-size: 20px;
+}
+
+nav img {
+  border-radius: 10px;
+}
+
+.presentacion {
+  margin-top: 120px;
+}
+
+.nosotros-cartel {
+  margin-bottom: 70px;
+}
+
+.nosotros-cartel a {
+  background-color: #9b1230;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 20px 0px 20px 0px;
+}
+
+.background {
+  background-image: url(/img/fondocelu00000.png);
+}
+
+.nosotros img {
+  max-width: 300px;
+  border-radius: 30px;
+}
+
+.nosotros .nosotrosinfo {
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  text-align: left;
+  padding: 50px;
+}
+
+.nosotros .nosotrosinfo h3, .nosotros .nosotrosinfo p {
+  padding: 15px;
+}
+
+.preproducto {
+  padding: 10px;
+}
+
+.preproducto a {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 20px 0px 20px 0px;
+  margin-top: 20px;
+  background-color: #9b1230;
+}
+
+.servicios {
+  margin-top: 6 0px;
+}
+
+.servicios img {
+  max-width: 300px;
+}
+/*# sourceMappingURL=styles.css.map */
