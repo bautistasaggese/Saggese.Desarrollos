@@ -1,24 +1,29 @@
 body {
-  background-color: #1c2120;
+  background-image: url(/img/difuminadocelui2.jpg);
 }
 
-nav li {
+nav nav li {
   font-size: 20px;
 }
 
-nav img {
-  border-radius: 10px;
+nav hover li {
+  -webkit-transform: 10px;
+          transform: 10px;
+}
+
+nav nav img {
+  border-radius: 20px;
 }
 
 .presentacion {
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .nosotros-cartel {
   margin-bottom: 70px;
 }
 
-.nosotros-cartel a {
+.nosotros-cartel .nosotros-cartel a {
   background-color: #9b1230;
   text-decoration: none;
   font-size: 30px;
@@ -26,16 +31,12 @@ nav img {
   border-radius: 20px 0px 20px 0px;
 }
 
-.background {
-  background-image: url(/img/fondocelu00000.png);
-}
-
 .nosotros img {
   max-width: 300px;
   border-radius: 30px;
 }
 
-.nosotros .nosotrosinfo {
+.nosotrosinfo {
   text-align: center;
   border-radius: 30px;
   margin-bottom: 40px;
@@ -45,6 +46,11 @@ nav img {
 
 .nosotros .nosotrosinfo h3, .nosotros .nosotrosinfo p {
   padding: 15px;
+}
+
+.background {
+  background-image: url(/img/ondasazules.jpg);
+  background-size: 2000px;
 }
 
 .preproducto {
@@ -64,7 +70,11 @@ nav img {
   margin-top: 6 0px;
 }
 
-.servicios img {
+.servicios .servicios img {
   max-width: 300px;
+}
+
+.servicios .tarjetaser {
+  border-radius: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

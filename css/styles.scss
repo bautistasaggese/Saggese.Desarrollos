@@ -1,63 +1,67 @@
-$gris: #1c2120;
-$fucsia: #9b1230;
-$secondary: rgb(236, 131, 240)
-
-nav {
-    li{
+body {
+    background-image: url(/img/difuminadocelui2.jpg);
+    
+  }
+  nav{
+      nav li {
         font-size: 20px;
-    }
-    img{
-        border-radius: 10px;
-    }
-}
-.presentacion{
-    margin-top: 120px;
-}
-.nosotros-cartel{
+      }
+      hover li{
+        transform: 10px;
+      }
+      nav img {
+        border-radius: 20px;
+      }
+  }
+  .presentacion {
+    margin-top: 150px;
+  }
+  .nosotros-cartel {
     margin-bottom: 70px;
-    a{
-        background-color: $fucsia;
-        text-decoration: none;
-        font-size: 30px;
-        padding: 10px;
-        border-radius: 20px 0px 20px 0px;
+    .nosotros-cartel a {
+      background-color: #9b1230;
+      text-decoration: none;
+      font-size: 30px;
+      padding: 10px;
+      border-radius: 20px 0px 20px 0px;
     }
 }
-.background{
-    background-image: url(/img/fondocelu00000.png);
+.nosotros img {
+  max-width: 300px;
+  border-radius: 30px;
 }
-.nosotros{
-    img{
-        max-width: 300px;
-        border-radius: 30px;
-    }
-    .nosotrosinfo{
-        text-align: center;
-        border-radius: 30px;
-        margin-bottom: 40px;
-        text-align: left;
-        padding: 50px;
-        h3, p{
-            padding: 15px;
-        }
-    }
+.nosotrosinfo {
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  text-align: left;
+  padding: 50px;
 }
-.preproducto{
+.nosotros .nosotrosinfo h3, .nosotros .nosotrosinfo p {
+  padding: 15px;
+}
+  .background {
+    background-image: url(/img/ondasazules.jpg);
+    background-size: 2000px;
+  }
+  .preproducto {
     padding: 10px;
-    a{
-        text-decoration: none;
-        font-size: 30px;
-        padding: 10px;
-        border-radius: 20px 0px 20px 0px;
-        margin-top: 20px;
-        background-color: rgb(155, 18, 48);
+    a {
+      text-decoration: none;
+      font-size: 30px;
+      padding: 10px;
+      border-radius: 20px 0px 20px 0px;
+      margin-top: 20px;
+      background-color: #9b1230;
     }
-    
-}
-.servicios{
-    img{
-        max-width: 300px;
+  }
+  .servicios {
+    margin-top: 6 0px;
+    .servicios img {
+      max-width: 300px;
     }
-}
-
-    
+    .tarjetaser{
+      border-radius: 20px;
+    }
+  }
+  /*# sourceMappingURL=styles.css.map */
