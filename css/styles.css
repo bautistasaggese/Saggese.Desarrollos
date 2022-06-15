@@ -2,6 +2,14 @@ body {
   background-image: url(/img/difuminadocelui2.jpg);
 }
 
+nav {
+  background-color: white;
+  /* === nombre ===*/
+  /* button styling */
+  /* this is the text, when you hover on button */
+  /* hover */
+}
+
 nav nav li {
   font-size: 20px;
 }
@@ -11,12 +19,115 @@ nav hover li {
           transform: 10px;
 }
 
-nav nav img {
-  border-radius: 20px;
+nav .navbar-toggler {
+  color: #ff0058 !important;
+}
+
+nav img {
+  border-radius: 10px;
+}
+
+nav .button {
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+nav .button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(95, 95, 95, 0.6);
+  --animation-color: #e20d3b;
+  --fs-size: 1em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+nav .hover-text {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+nav .button:hover .hover-text {
+  width: 100%;
+  -webkit-filter: drop-shadow(0 0 23px var(--animation-color));
+          filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+nav .collapse button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 10px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #f14066;
+  color: ghostwhite;
+}
+
+nav .collapse button span {
+  position: relative;
+  z-index: 10;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+nav .collapse button:hover span {
+  color: black;
+}
+
+nav .collapse button::before,
+nav .collapse button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+nav .collapse button::before {
+  content: "";
+  background: #252525;
+  width: 120%;
+  left: -10%;
+  -webkit-transform: skew(30deg);
+          transform: skew(30deg);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1), -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+nav .collapse button:hover::before {
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
 }
 
 .presentacion {
-  margin-top: 150px;
+  margin-top: 110px;
 }
 
 .nosotros-cartel {
@@ -49,8 +160,7 @@ nav nav img {
 }
 
 .background {
-  background-image: url(/img/ondasazules.jpg);
-  background-size: 2000px;
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .preproducto {
@@ -76,5 +186,64 @@ nav nav img {
 
 .servicios .tarjetaser {
   border-radius: 20px;
+}
+
+.servicios .tarjetaser img {
+  border-radius: 10px;
+}
+
+.proyectos a {
+  text-decoration: none;
+}
+
+.proyectos .card {
+  width: 26rem;
+  border-radius: 20px;
+}
+
+.proyectos img {
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #cecece;
+}
+
+footer .btn {
+  background-color: #252525;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+footer .maps iframe {
+  border-radius: 20px;
+  width: 800px;
+  height: 300px;
+}
+
+footer .fotooficina img {
+  text-align: center;
+  max-width: 160px;
+  border-radius: 20px;
+}
+
+.prueba {
+  /* From uiverse.io by @adamgiebl */
+}
+
+.prueba .card {
+  margin: 20px;
+  margin-top: 200px;
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background: lightgrey;
+  -webkit-box-shadow: #d11bff42 0 15px 40px -5px;
+          box-shadow: #d11bff42 0 15px 40px -5px;
+  z-index: 1;
+  border-radius: 21px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */
