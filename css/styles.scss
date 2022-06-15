@@ -16,49 +16,10 @@ body {
         border-radius: 10px;
       }
 
-/* === nombre ===*/
-.button {
-  margin: 0;
-  background: transparent;
-  padding: 0;
-  border: none;
-}
-/* button styling */
-.button {
-  --border-right: 6px;
-  --text-stroke-color: rgba(95, 95, 95, 0.6);
-  --animation-color: #e20d3b;
-  --fs-size: 1em;
-  letter-spacing: 3px;
-  text-decoration: none;
-  font-size: var(--fs-size);
-  font-family: "Arial";
-  position: relative;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-/* this is the text, when you hover on button */
-.hover-text {
-  position: absolute;
-  box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
-  overflow: hidden;
-  transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
-}
-/* hover */
-.button:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
-}
+
 // navlinks
 .collapse{
-  button {
+  .button {
     outline: none;
     cursor: pointer;
     border: none;
@@ -75,18 +36,18 @@ body {
     color: ghostwhite;
    }
    
-   button span {
+   .button span {
     position: relative;
     z-index: 10;
     transition: color 0.4s;
    }
    
-   button:hover span {
+   .button:hover span {
     color: black;
    }
    
-   button::before,
-   button::after {
+   .button::before,
+   .button::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -95,7 +56,7 @@ body {
     z-index: 0;
    }
    
-   button::before {
+   .button::before {
     content: "";
     background: rgb(37, 37, 37);
     width: 120%;
@@ -104,7 +65,7 @@ body {
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
    }
    
-   button:hover::before {
+   .button:hover::before {
     transform: translate3d(100%, 0, 0);
    }
 }
@@ -139,6 +100,7 @@ body {
   padding: 15px;
 }
   .background {
+    border-radius: 50px;
     background: linear-gradient(315deg, #ffbc00, #ff0058);
   }
   .preproducto {

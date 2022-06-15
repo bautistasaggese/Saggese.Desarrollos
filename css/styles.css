@@ -4,10 +4,6 @@ body {
 
 nav {
   background-color: white;
-  /* === nombre ===*/
-  /* button styling */
-  /* this is the text, when you hover on button */
-  /* hover */
 }
 
 nav nav li {
@@ -27,50 +23,7 @@ nav img {
   border-radius: 10px;
 }
 
-nav .button {
-  margin: 0;
-  background: transparent;
-  padding: 0;
-  border: none;
-}
-
-nav .button {
-  --border-right: 6px;
-  --text-stroke-color: rgba(95, 95, 95, 0.6);
-  --animation-color: #e20d3b;
-  --fs-size: 1em;
-  letter-spacing: 3px;
-  text-decoration: none;
-  font-size: var(--fs-size);
-  font-family: "Arial";
-  position: relative;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-
-nav .hover-text {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
-  overflow: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
-}
-
-nav .button:hover .hover-text {
-  width: 100%;
-  -webkit-filter: drop-shadow(0 0 23px var(--animation-color));
-          filter: drop-shadow(0 0 23px var(--animation-color));
-}
-
-nav .collapse button {
+nav .collapse .button {
   outline: none;
   cursor: pointer;
   border: none;
@@ -87,19 +40,19 @@ nav .collapse button {
   color: ghostwhite;
 }
 
-nav .collapse button span {
+nav .collapse .button span {
   position: relative;
   z-index: 10;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
 }
 
-nav .collapse button:hover span {
+nav .collapse .button:hover span {
   color: black;
 }
 
-nav .collapse button::before,
-nav .collapse button::after {
+nav .collapse .button::before,
+nav .collapse .button::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -108,7 +61,7 @@ nav .collapse button::after {
   z-index: 0;
 }
 
-nav .collapse button::before {
+nav .collapse .button::before {
   content: "";
   background: #252525;
   width: 120%;
@@ -121,7 +74,7 @@ nav .collapse button::before {
   transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1), -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
 
-nav .collapse button:hover::before {
+nav .collapse .button:hover::before {
   -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0);
 }
@@ -160,6 +113,7 @@ nav .collapse button:hover::before {
 }
 
 .background {
+  border-radius: 50px;
   background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
