@@ -77,6 +77,12 @@ nav .navegacion .button:hover::before {
   margin-top: 110px;
 }
 
+.presentacion h1 {
+  background: linear-gradient(315deg, #ffbc00, #ff0059ab, #ffbc00);
+  -webkit-text-fill-color: #b9b9b900;
+  -webkit-background-clip: text;
+}
+
 .nosotros-cartel {
   margin-bottom: 70px;
 }
@@ -140,6 +146,18 @@ nav .navegacion .button:hover::before {
   border-radius: 10px;
 }
 
+.servicios .proceso h3 {
+  background: linear-gradient(315deg, #ffbc00, #ff0059ab, #ffbc00);
+  -webkit-text-fill-color: #b9b9b900;
+  -webkit-background-clip: text;
+}
+
+.servicios .mantenimiento h3 {
+  background: linear-gradient(315deg, #ffbc00, #ff0059ab, #ffbc00);
+  -webkit-text-fill-color: #b9b9b900;
+  -webkit-background-clip: text;
+}
+
 .proyectos a {
   text-decoration: none;
 }
@@ -151,6 +169,12 @@ nav .navegacion .button:hover::before {
 
 .proyectos img {
   border-radius: 10px;
+}
+
+.proyectos h3 {
+  background: linear-gradient(315deg, #ffbc00, #ff0059ab, #ffbc00);
+  -webkit-text-fill-color: #b9b9b900;
+  -webkit-background-clip: text;
 }
 
 footer {

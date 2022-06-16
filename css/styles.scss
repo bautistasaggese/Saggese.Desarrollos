@@ -71,6 +71,11 @@ button{
 
   .presentacion {
     margin-top: 110px;
+    h1{
+      background: linear-gradient(315deg, #ffbc00, #ff0059ab, #ffbc00,);
+      -webkit-text-fill-color: #b9b9b900;
+      -webkit-background-clip: text;
+    }
   }
   .nosotros-cartel {
     margin-bottom: 70px;
@@ -122,6 +127,20 @@ button{
         border-radius: 10px;
       }
     }
+    .proceso{
+      h3{
+        background: linear-gradient(315deg, #ffbc00, #ff0059ab, #ffbc00,);
+      -webkit-text-fill-color: #b9b9b900;
+      -webkit-background-clip: text;
+      }
+    }
+    .mantenimiento{
+      h3{
+        background: linear-gradient(315deg, #ffbc00, #ff0059ab, #ffbc00,);
+      -webkit-text-fill-color: #b9b9b900;
+      -webkit-background-clip: text;
+      }
+    }
   }
   .proyectos{
     a{
@@ -133,6 +152,11 @@ button{
     }
     img{
       border-radius: 10px;
+    }
+    h3{
+      background: linear-gradient(315deg, #ffbc00, #ff0059ab, #ffbc00,);
+    -webkit-text-fill-color: #b9b9b900;
+    -webkit-background-clip: text;
     }
 }
 footer{
