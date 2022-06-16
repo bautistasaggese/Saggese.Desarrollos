@@ -1,29 +1,24 @@
 body {
-  background-image: url(/img/difuminadocelui2.jpg);
-}
-
-nav {
-  background-color: white;
+  background: linear-gradient(315deg, #464646, #b9b9b9, #cdd0fd, #c0e6ff, #f3c6fc);
 }
 
 nav nav li {
   font-size: 20px;
 }
 
-nav hover li {
-  -webkit-transform: 10px;
-          transform: 10px;
-}
-
 nav .navbar-toggler {
-  color: #ff0058 !important;
+  color: #ff005900 !important;
 }
 
 nav img {
   border-radius: 10px;
 }
 
-nav .collapse .button {
+nav button {
+  text-decoration: none;
+}
+
+nav .navegacion .button {
   outline: none;
   cursor: pointer;
   border: none;
@@ -37,22 +32,21 @@ nav .collapse .button {
   border-radius: 500px;
   overflow: hidden;
   background: #f14066;
-  color: ghostwhite;
 }
 
-nav .collapse .button span {
+nav .navegacion .button span {
   position: relative;
   z-index: 10;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
 }
 
-nav .collapse .button:hover span {
+nav .navegacion .button:hover span {
   color: black;
 }
 
-nav .collapse .button::before,
-nav .collapse .button::after {
+nav .navegacion .button::before,
+nav .navegacion .button::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -61,7 +55,7 @@ nav .collapse .button::after {
   z-index: 0;
 }
 
-nav .collapse .button::before {
+nav .navegacion .button::before {
   content: "";
   background: #252525;
   width: 120%;
@@ -74,7 +68,7 @@ nav .collapse .button::before {
   transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1), -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
 
-nav .collapse .button:hover::before {
+nav .navegacion .button:hover::before {
   -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0);
 }
@@ -164,7 +158,6 @@ footer {
 }
 
 footer .btn {
-  background-color: #777777;
   border-radius: 10px;
   margin: 10px;
   margin-left: 70px;
@@ -181,23 +174,5 @@ footer .fotooficina img {
   text-align: center;
   max-width: 160px;
   border-radius: 20px;
-}
-
-.prueba {
-  /* From uiverse.io by @adamgiebl */
-}
-
-.prueba .card {
-  margin: 20px;
-  margin-top: 200px;
-  position: relative;
-  width: 190px;
-  height: 254px;
-  background: lightgrey;
-  -webkit-box-shadow: #d11bff42 0 15px 40px -5px;
-          box-shadow: #d11bff42 0 15px 40px -5px;
-  z-index: 1;
-  border-radius: 21px;
-  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */
