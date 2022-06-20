@@ -46,7 +46,7 @@ window.addEventListener('scroll', function(){
     let tamañoDePantalla = window.innerHeight;
 
     if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = 'mover 1.2s ease-in-out'
+        animacion.style.animation = 'mover 1.s ease-in-out'
     }
 })
 
@@ -56,8 +56,8 @@ window.addEventListener('scroll', function(){
     console.log(posicionObj1);
     let tamañoDePantalla = window.innerHeight;
 
-    if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = 'mover 1.2s ease-in-out'
+    if(posicionObj1 > tamañoDePantalla){
+        animacion.style.animation = 'mover 1.s ease-in-out'
     }
 })
 
@@ -67,8 +67,12 @@ window.addEventListener('scroll', function(){
     console.log(posicionObj1);
     let tamañoDePantalla = window.innerHeight;
 
-    if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = 'mover 1.2s ease-in-out'
+    if(posicionObj1 > tamañoDePantalla){
+        animacion.style.animation = 'mover 1.s ease-in-out'
     }
 })
 //FIN DE ANIMACIONES PROYECTOS DE DESARROLLO
+
+//
+//animaciones mantenimiento
+//
