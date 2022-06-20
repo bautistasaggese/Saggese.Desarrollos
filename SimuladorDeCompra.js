@@ -39,23 +39,33 @@
 
 //animaciones
 window.addEventListener('scroll', function(){
-    let animacion = document.getElementById('animadonosotrosfondo');
+    let animacion = document.getElementById('Proceso1');
     let posicionObj1 = animacion.getBoundingClientRect().top;
     console.log(posicionObj1);
-    let tamañoDePantalla = window.innerHeight;
+    let tamañoDePantalla = window.innerHeight/1.5;
 
     if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = 'mover 0.8s ease-out'
+        animacion.style.animation = 'mover 0.7s ease-out'
     }
 })
 window.addEventListener('scroll', function(){
-    let animacion = document.getElementById('animadonosotros');
+    let animacion = document.getElementById('Proceso2');
     let posicionObj1 = animacion.getBoundingClientRect().top;
     console.log(posicionObj1);
-    let tamañoDePantalla = window.innerHeight;
+    let tamañoDePantalla = window.innerHeight/1.5;
 
     if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = 'mover 1s ease-out'
+        animacion.style.animation = 'mover 0.9s ease-out'
+    }
+})
+window.addEventListener('scroll', function(){
+    let animacion = document.getElementById('Proceso3');
+    let posicionObj1 = animacion.getBoundingClientRect().top;
+    console.log(posicionObj1);
+    let tamañoDePantalla = window.innerHeight/1.5;
+
+    if(posicionObj1 < tamañoDePantalla){
+        animacion.style.animation = 'mover 1.2s ease-out'
     }
 })
 
