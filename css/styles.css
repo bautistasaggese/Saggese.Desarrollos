@@ -1,7 +1,11 @@
 body {
   background: linear-gradient(315deg, #464646, #b9b9b9, #cdd0fd, #c0e6ff, #f3c6fc);
 }
-
+@keyframes mover{
+  0%{
+    transform: translate(100%)
+  }
+}
 nav nav li {
   font-size: 20px;
 }
@@ -72,19 +76,16 @@ nav .navegacion .button:hover::before {
   -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0);
 }
-@keyframes mover{
-  0%{
-    transform: translate(100%);
-  }
-}
+
 .presentacion {
-  margin-top: 110px;
+  margin-top: 200px;
 }
 
 .presentacion h1 {
   background: linear-gradient(315deg, #ffbc00, #ff0059ab, #ffbc00);
   -webkit-text-fill-color: #000000;
   -webkit-background-clip: text;
+  margin-bottom: 50px;
 }
 
 .nosotros-cartel {

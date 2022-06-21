@@ -56,7 +56,7 @@ window.addEventListener('scroll', function(){
     console.log(posicionObj1);
     let tamañoDePantalla = window.innerHeight;
 
-    if(posicionObj1 > tamañoDePantalla){
+    if(posicionObj1 < tamañoDePantalla){
         animacion.style.animation = 'mover 1.2s ease-in-out'
     }
 })
@@ -67,7 +67,7 @@ window.addEventListener('scroll', function(){
     console.log(posicionObj1);
     let tamañoDePantalla = window.innerHeight;
 
-    if(posicionObj1 > tamañoDePantalla){
+    if(posicionObj1 < tamañoDePantalla){
         animacion.style.animation = 'mover 1.2s ease-in-out'
     }
 })
@@ -76,3 +76,13 @@ window.addEventListener('scroll', function(){
 //
 //animaciones mantenimiento
 //
+window.addEventListener('scroll', function(){
+    let animacion = document.getElementById('mantenimiento1');
+    let posicionObj1 = animacion.getBoundingClientRect().top;
+    console.log(posicionObj1);
+    let tamañoDePantalla = window.innerHeight;
+
+    if(posicionObj1 < tamañoDePantalla){
+        animacion.style.animation = 'mover 1.2s ease-in-out'
+    }
+})
