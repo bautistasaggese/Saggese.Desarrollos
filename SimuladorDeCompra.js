@@ -1,4 +1,5 @@
-//compra armada para la entrega
+//Proceso de compra
+
 let quisocomprar = "si";
 let producto = "pagina";
 let precio = 0;
@@ -7,6 +8,7 @@ let precioTotal = 0;
 let seguirComprando = false;
 
 let deseacomprar = prompt("¿Desea comprar algun producto? Conteste con si o no.");
+
 if (deseacomprar == quisocomprar){
     do{
         producto = prompt ("Queres comprar una pagina, mantenimiento de pagina o ambos? Conteste con minusculas!!!, pagina, mantenimiento o ambos.");
@@ -36,10 +38,11 @@ if (deseacomprar == quisocomprar){
     alert("Disfrute nuestro sitio web")
 }
 
+//Fin de proceso de compra
 
-//
-//animaciones PROCESO DE DESARROLLO
-//
+
+//Animacion proceso de desarrollo
+
 window.addEventListener('scroll', function(){
     let animacion = document.getElementById('Proceso1');
     let posicionObj1 = animacion.getBoundingClientRect().top;
@@ -72,11 +75,12 @@ window.addEventListener('scroll', function(){
         animacion.style.animation = 'mover 1.2s ease-in-out'
     }
 })
-//FIN DE ANIMACIONES PROYECTOS DE DESARROLLO
 
-//
-//animaciones mantenimiento
-//
+//Fin de animacion proceso de desarrollo
+
+
+//Animaciones mantenimiento
+
 window.addEventListener('scroll', function(){
     let animacion = document.getElementById('mantenimiento1');
     let posicionObj1 = animacion.getBoundingClientRect().top;
@@ -87,3 +91,5 @@ window.addEventListener('scroll', function(){
         animacion.style.animation = 'mover 1.2s ease-in-out'
     }
 })
+
+//Fin de animacion mantenimiento
