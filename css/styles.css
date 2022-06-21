@@ -1,11 +1,7 @@
 body {
   background: linear-gradient(315deg, #464646, #b9b9b9, #cdd0fd, #c0e6ff, #f3c6fc);
 }
-@keyframes mover{
-  0%{
-    transform: translate(100%)
-  }
-}
+
 nav nav li {
   font-size: 20px;
 }
