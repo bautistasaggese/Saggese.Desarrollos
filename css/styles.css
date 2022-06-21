@@ -78,7 +78,8 @@ nav .navegacion .button:hover::before {
 }
 
 .presentacion {
-  margin-top: 200px;
+  margin-top: 140px;
+  margin-bottom: 70px;
 }
 
 .presentacion h1 {
