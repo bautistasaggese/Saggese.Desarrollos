@@ -69,7 +69,7 @@ window.addEventListener('scroll', function(){
     let animacion = document.getElementById('Proceso3');
     let posicionObj1 = animacion.getBoundingClientRect().top;
     console.log(posicionObj1);
-    let tamañoDePantalla = window.innerHeight*1.13;
+    let tamañoDePantalla = window.innerHeight*1.1;
 
     if(posicionObj1 < tamañoDePantalla){
         animacion.style.animation = 'mover 1.2s ease-in-out'
