@@ -1,6 +1,11 @@
 body {
   background: linear-gradient(315deg, #464646, #b9b9b9, #cdd0fd, #c0e6ff, #f3c6fc);
 }
+/* @keyframes mover{
+  0%{
+    transform: translate(100%);
+  }
+} */
 @keyframes mover{
   0%{
     transform: translate(100%);
@@ -137,7 +142,7 @@ nav .navegacion .button:hover::before {
 }
 
 .servicios {
-  margin-top: 6 0px;
+  margin-top: 100px;
 }
 
 .servicios .servicios img {
@@ -145,6 +150,7 @@ nav .navegacion .button:hover::before {
 }
 
 .servicios .tarjetaser {
+  margin-bottom: 100px !important;
   border-radius: 20px;
 }
 
