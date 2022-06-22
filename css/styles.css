@@ -119,7 +119,7 @@ nav .navegacion .button:hover::before {
   padding: 50px;
 }
 
-.nosotros .nosotrosinfo h3, .nosotros .nosotrosinfo p {
+.nosotros .nosotrosinfo h2, .nosotros .nosotrosinfo p {
   padding: 15px;
 }
 
