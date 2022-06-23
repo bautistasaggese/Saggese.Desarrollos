@@ -43,53 +43,53 @@
 
 //Animacion proceso de desarrollo
 
-window.addEventListener('scroll', function(){
-    let animacion = document.getElementById('Proceso1');
-    let posicionObj1 = animacion.getBoundingClientRect().top;
-    console.log(posicionObj1);
-    let tamañoDePantalla = window.innerHeight*1.2;
+// window.addEventListener('scroll', function(){
+//     let animacion = document.getElementById('Proceso1');
+//     let posicionObj1 = animacion.getBoundingClientRect().top;
+//     console.log(posicionObj1);
+//     let tamañoDePantalla = window.innerHeight*1.2;
 
-    if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = 'mover 1.2s ease-in-out'
-    }
-})
+//     if(posicionObj1 < tamañoDePantalla){
+//         animacion.style.animation = 'mover 1.2s ease-in-out'
+//     }
+// })
 
-window.addEventListener('scroll', function(){
-    let animacion = document.getElementById('Proceso2');
-    let posicionObj1 = animacion.getBoundingClientRect().top;
-    console.log(posicionObj1);
-    let tamañoDePantalla = window.innerHeight*1.2;
+// window.addEventListener('scroll', function(){
+//     let animacion = document.getElementById('Proceso2');
+//     let posicionObj1 = animacion.getBoundingClientRect().top;
+//     console.log(posicionObj1);
+//     let tamañoDePantalla = window.innerHeight*1.2;
 
-    if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = 'mover 1.2s ease-in-out'
-    }
-})
+//     if(posicionObj1 < tamañoDePantalla){
+//         animacion.style.animation = 'mover 1.2s ease-in-out'
+//     }
+// })
 
-window.addEventListener('scroll', function(){
-    let animacion = document.getElementById('Proceso3');
-    let posicionObj1 = animacion.getBoundingClientRect().top;
-    console.log(posicionObj1);
-    let tamañoDePantalla = window.innerHeight*1.1;
+// window.addEventListener('scroll', function(){
+//     let animacion = document.getElementById('Proceso3');
+//     let posicionObj1 = animacion.getBoundingClientRect().top;
+//     console.log(posicionObj1);
+//     let tamañoDePantalla = window.innerHeight*1.1;
 
-    if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = 'mover 1.2s ease-in-out'
-    }
-})
+//     if(posicionObj1 < tamañoDePantalla){
+//         animacion.style.animation = 'mover 1.2s ease-in-out'
+//     }
+// })
 
 //Fin de animacion proceso de desarrollo
 
 
 //Animaciones mantenimiento
 
-window.addEventListener('scroll', function(){
-    let animacion = document.getElementById('mantenimiento1');
-    let posicionObj1 = animacion.getBoundingClientRect().top;
-    console.log(posicionObj1);
-    let tamañoDePantalla = window.innerHeight*1.2;
+// window.addEventListener('scroll', function(){
+//     let animacion = document.getElementById('mantenimiento1');
+//     let posicionObj1 = animacion.getBoundingClientRect().top;
+//     console.log(posicionObj1);
+//     let tamañoDePantalla = window.innerHeight*1.2;
 
-    if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = 'mover 1.2s ease-in-out'
-    }
-})
+//     if(posicionObj1 < tamañoDePantalla){
+//         animacion.style.animation = 'mover 1.2s ease-in-out'
+//     }
+// })
 
 //Fin de animacion mantenimiento
