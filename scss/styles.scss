@@ -1,7 +1,26 @@
 
 body {
-    background: linear-gradient(315deg, #464646,#b9b9b9, #cdd0fd, #c0e6ff, #f3c6fc);
+    // background: linear-gradient(315deg, #464646,#b9b9b9, #cdd0fd, #c0e6ff, #f3c6fc);
+    background-image: linear-gradient(135deg, #f88ab8, #cdd0fd,  #c0e6ff, #f3c6fc);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
   }
+@keyframes fanimado{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+@keyframes mover{
+  0%{
+    transform: translate(100%);
+  }
+}
   nav{
       nav li {
         font-size: 20px;
@@ -104,10 +123,13 @@ button{
 .nosotros .nosotrosinfo h3, .nosotros .nosotrosinfo p {
   padding: 15px;
 }
-  .background {
+.background {
     border-radius: 50px;
-    background: linear-gradient(315deg, #ffbc00, #ff0058);
-  }
+    //background: linear-gradient(315deg, #ffbc00, #ff0058);
+    background-image: linear-gradient(135deg, #ffbc00, #ff0059ab, #ffbc00);
+      background-size: 500%;
+      animation: fanimado 10s infinite;
+}
   .preproducto {
     padding: 10px;
     a {
