@@ -146,6 +146,7 @@ nav .navegacion .button:hover::before {
 .nosotrosinfo {
   text-align: center;
   border-radius: 30px;
+  margin-top: 20px;
   margin-bottom: 40px;
   text-align: left;
   padding: 50px;
