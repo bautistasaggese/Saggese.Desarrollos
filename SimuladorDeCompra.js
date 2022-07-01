@@ -1,4 +1,4 @@
-//Proceso de compra
+// // primer entrega Proceso de compra
 
 // let quisocomprar = "si";
 // let producto = "pagina";
@@ -41,55 +41,125 @@
 //Fin de proceso de compra
 
 
-//Animacion proceso de desarrollo
+class Producto {
+    constructor(nombre, precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+};
 
-// window.addEventListener('scroll', function(){
-//     let animacion = document.getElementById('Proceso1');
-//     let posicionObj1 = animacion.getBoundingClientRect().top;
-//     console.log(posicionObj1);
-//     let tamañoDePantalla = window.innerHeight*1.2;
+const producto1 = new Producto("pagina", 120);
+const producto2 = new Producto("mantenimiento", 20);
+const producto3 = new Producto("diseño", 100);
+const producto4 = new Producto("logo", 20);
+const producto5 = new Producto("ceo", 50);
 
-//     if(posicionObj1 < tamañoDePantalla){
-//         animacion.style.animation = 'mover 1.2s ease-in-out'
-//     }
-// })
+const productos = [
+    producto1.nombre + '  $' + producto1.precio,
+    producto2.nombre + '  $' + producto2.precio,
+    producto3.nombre + '  $' + producto3.precio,
+    producto4.nombre + '  $' + producto4.precio,
+    producto5.nombre + '  $' + producto5.precio
+];
 
-// window.addEventListener('scroll', function(){
-//     let animacion = document.getElementById('Proceso2');
-//     let posicionObj1 = animacion.getBoundingClientRect().top;
-//     console.log(posicionObj1);
-//     let tamañoDePantalla = window.innerHeight*1.2;
+function iniciarCalculo() {
 
-//     if(posicionObj1 < tamañoDePantalla){
-//         animacion.style.animation = 'mover 1.2s ease-in-out'
-//     }
-// })
+    alert('Bienvenidos a Saggese Desarrollos!');
+    elegirProducto();
 
-// window.addEventListener('scroll', function(){
-//     let animacion = document.getElementById('Proceso3');
-//     let posicionObj1 = animacion.getBoundingClientRect().top;
-//     console.log(posicionObj1);
-//     let tamañoDePantalla = window.innerHeight*1.1;
+};
 
-//     if(posicionObj1 < tamañoDePantalla){
-//         animacion.style.animation = 'mover 1.2s ease-in-out'
-//     }
-// })
+let precio = 0;
+let cantidad = 0;
+let seguirComprando = true;
 
-//Fin de animacion proceso de desarrollo
+function elegirProducto() {
+    productoElegido = prompt('que productos quiere cotizar?' + '\n' + productos.join('\n') + '\n' + 'ingrese el nombre del producto que quiere y presione aceptar.' + '\n' + 'Presione cancelar para abandonar.');
 
+    if (productoElegido === null) {
+        return;
+    }
 
-//Animaciones mantenimiento
+    switch (productoElegido.toUpperCase()) {
+        case "Pagina":
+                precio = producto1.precio;
+                cantidadCuotas();
+            break;
+        case "mantenimiento":
+                precio = producto2.precio;
+                cantidadCuotas();
+            break;
+        case "diseño":
+            precio = producto3.precio;
+                cantidadCuotas();
+            break;
+        case "logo":
+            precio = producto4.precio;
+                cantidadCuotas();
+            break;
+        case "ceo":
+            precio = producto5.precio;
+                cantidadCuotas();
+            break;
+        default:
+            alert(`
+                algo salio mal!
 
-// window.addEventListener('scroll', function(){
-//     let animacion = document.getElementById('mantenimiento1');
-//     let posicionObj1 = animacion.getBoundingClientRect().top;
-//     console.log(posicionObj1);
-//     let tamañoDePantalla = window.innerHeight*1.2;
+                vuelve a intentarlo
+            `);
+            producto = " ";
+            elegirProducto()
+            break;
+    };
 
-//     if(posicionObj1 < tamañoDePantalla){
-//         animacion.style.animation = 'mover 1.2s ease-in-out'
-//     }
-// })
+};
 
-//Fin de animacion mantenimiento
+function cantidadCuotas() {
+
+    cuotas = prompt(`
+        En cuantas cuotas desea calcular 3, 6 o 12?
+
+        Ingrese la cantidad que quiere y presione "Aceptar".
+    `);
+
+    if (cuotas === null) {
+        return;
+    }
+
+    switch (Number(cuotas)) {
+        case 3:
+        case 6:
+        case 12:
+            precioCuotas = precio / cuotas;
+            finalizarCalculo()
+            break;
+        default:
+            alert(`
+                algo salio mal!
+
+                vuelve a intentarlo
+            `);
+            cantidad = " ";
+            cantidadCuotas();
+            break;
+    };
+};
+
+function finalizarCalculo() {
+    alert ('Las cuotas serian de: $' + precioCuotas.toFixed(2))
+
+    let finalizarCalculo = confirm ("¿Quiere hacer otro calculo?");
+        
+    if (finalizarCalculo) {
+        elegirProducto()
+    } else {
+        saludo()    
+    };
+
+}
+
+function saludo() {
+    alert ('muchas gracias por utilizar la calculadores de cuotas! vuelva pronto!')
+}
+
+iniciarCalculo()
